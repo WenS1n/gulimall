@@ -15,5 +15,10 @@
         <module>gulimall-product</module>
         <module>gulimall-ware</module>
         <module>gulimall-coupon</module>
+
+<!--        人人开源-->
+        <module>gulimall-fast</module>
+        <module>renren-generator</module>
+        <module>gulimall-common</module>
     </modules>
 </project>
