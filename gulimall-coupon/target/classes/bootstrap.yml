@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: gulimall-coupon
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 961f9b55-a038-4e5f-874f-d90362f1d137
