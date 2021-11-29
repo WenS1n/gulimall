@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: gulimall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+        - id: test_route
+          uri: http://www.vesns.cn
+          predicates:
+            - Query=url,vesns
+
+        - id: baidu_route
+          uri: https://www.baidu.com/
+          predicates:
+            - Query=url,baidu
+
+        - id: after_route
+          uri: http://vesns.cn
+          predicates:
+            - Cookie=mycookie,mycookievalue
+
+
+server:
+  port: 88
+
