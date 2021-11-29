@@ -28,6 +28,7 @@ import cn.vesns.common.utils.R;
 @RestController
 @RequestMapping("ware/purchase")
 public class PurchaseController {
+
     @Autowired
     private PurchaseService purchaseService;
 
